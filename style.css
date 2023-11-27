@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #7e4963;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul li {
+  list-style: none;
+}
+
+input {
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-weight: 700;
+  color: inherit;
+  width: 100%;
+}
+
+textarea {
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: 1rem;
+  background: none;
+  width: 100%;
+  resize: none;
+  outline: none;
+  font-weight: 700;
+  height: 1.5rem;
+  overflow: hidden;
+}
+
+
+span {
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  background: transparent;
+  transition: .4s;
+  color: inherit;
+  font-size: 1.2rem;
+}
+
+hr {
+  border: none;
+  height: 0.3rem;
+  border-radius: 0.5rem;
+  background: rgb(52, 104, 9);
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* POP UP PERMISSION */
+
+.pop-up__permission {
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  gap: 3rem;
+  position: fixed;
+  color: white;
+  border-radius: 0.5rem;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -250%);
+  padding: 1rem 2rem;
+  background: rgb(0, 0, 0);
+  transition: .4s;
+}
+
+.pop-up__permission.show {
+  transform: translate(-50%, -50%);
+}
+
+.permission {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.permission button {
+  padding: 1rem 2rem;
+  border-radius: 0.4rem;
+}
+
+
+.permission-yes {
+  background: #445761;
+  border: 2px solid #445761;
+}
+
+.permission-yes:hover {
+  opacity: 0.8;
+}
+
+.permission-no {
+  border: 2px solid white;
+}
+
+.permission-no:hover {
+  background: white;
+  color: black;
+}
+
+
+
+/* POP UP */
+
+.pop-up {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: fixed;
+  color: white;
+  border-radius: 0.5rem;
+  left: 50%;
+  top: 50%;
+  transform: translate(-500%, -50%);
+  padding: 1rem 2rem;
+  background: rgb(0, 0, 0);
+  transition: .4s;
+}
+
+.pop-up.show {
+  transform: translate(-50%, -50%);
+}
+
+.pop-up__difficluty {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pop-up__difficluty span {
+  padding: 0.8rem;
+  border-radius: 0.4rem;
+  background: rgb(52, 104, 9);
+}
+
+.pop-up__input{
+  padding: 1rem;
+  background: rgb(21, 24, 35);
+  border-radius: 0.4rem;
+}
+
+.pop-up__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pop-up__list li {
+  padding: 2rem;
+  border-radius: 0.4rem;
+}
+
+.pop-up__list li:nth-child(1) {
+  background: rgb(104, 9, 9);
+}
+.pop-up__list li:nth-child(2) {
+  background: rgb(104, 68, 9);
+}
+.pop-up__list li:nth-child(3) {
+  background: rgb(52, 104, 9)
+}
+
+.pop-up__list li:hover {
+  opacity: 0.8;
+}
+
+.pop-up button {
+  margin-top: 1rem;
+  background: #1d252d;
+  padding: 1rem 2rem;
+  border-radius: 0.4rem;
+}
+
+.pop-up button:hover {
+  background: #161e27;
+}
+
+/* CARD */
+
+.card {
+  min-width: 25rem;
+  padding: 1rem 0.5rem;
+  background: #101204;
+  color: #A2ADB7;
+  border-radius: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card-list {
+  margin-top: 3rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.heading {
+  padding-left: 1rem;
+  font-weight: 400;
+}
+
+.card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-items__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card-items__list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0.5rem;
+  background: #22272B;
+  border-radius: 0.6rem;
+}
+
+.card-items__list li input {
+  background: none;
+}
+
+.delete:hover {
+  color: #6b7075;
+}
+
+
+
+
+.save-button {
+  padding: 1rem 2rem;
+  background: #2f3943;
+  color: white;
+  border-radius: 0.4rem;
+}
+
+.save-button:hover {
+  background: #1d252d;
+}
+
+.card-button {
+  padding: 1rem 2rem;
+  border-radius: 0.4rem;
+}
+
+.card-button:hover {
+  background: #3d3d3d;
+}
+
+/* COL ADD */
+
+
+
+.col-btn {
+  position: fixed;
+  right: 5%;
+  bottom: 10%;
+  padding: 1rem 2rem;
+  border-radius: 0.4rem;
+  color: white;
+  background: rgba(51, 51, 51, 0.745);
+  padding: 1rem;
+  border-radius: 0.4rem;
+}
+
+.col-btn:hover {
+  background: rgba(255, 255, 255, 0.149);
+}
